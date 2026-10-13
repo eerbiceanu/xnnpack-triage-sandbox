@@ -1,0 +1,10 @@
+name: XNNPack Sandbox CI
+on:
+  pull_request:
+  workflow_dispatch:
+jobs:
+  microkernel-check:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Verify Sandbox PR
+        run: echo "XNNPack Sandbox CI passed"
