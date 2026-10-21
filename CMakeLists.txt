@@ -5,4 +5,5 @@ PROJECT(XNNPACK C CXX ASM)
 SET(XNNPACK_MICROKERNEL_SRCS
   src/f16-gemm/neon-fp16arith.c
   src/f32-vbinary/neon.c
+  src/f16-gemm/neon-kleidiai-pack.c
 )
