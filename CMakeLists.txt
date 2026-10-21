@@ -6,4 +6,5 @@ SET(XNNPACK_MICROKERNEL_SRCS
   src/f16-gemm/neon-fp16arith.c
   src/f32-vbinary/neon.c
   src/qd8-f32-qc8w-gemm/neon-dynquant.c
+  src/f16-gemm/neon-kleidiai-pack.c
 )
