@@ -1,0 +1,8 @@
+load("@bazel_skylib//lib:selects.bzl", "selects")
+
+package(default_visibility = ["//visibility:public"])
+
+cc_library(
+    name = "xnnpack_sandbox_core",
+    hdrs = ["src/xnnpack/microkernel-utils.h"],
+)
