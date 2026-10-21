@@ -8,6 +8,9 @@
 static inline size_t xnn_align_up(size_t val, size_t align) {
   return (val + align - 1) & ~(align - 1);
 }
+static inline size_t xnn_safe_mul_stride(size_t a, size_t b) {
+  return (a > 0 && b > SIZE_MAX / a) ? 0 : (a * b);
+}
 // Baseline context separator line 01 (isolates git diff hunks)
 // Baseline context separator line 02 (isolates git diff hunks)
 // Baseline context separator line 03 (isolates git diff hunks)
