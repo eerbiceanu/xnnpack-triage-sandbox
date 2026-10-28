@@ -48,3 +48,5 @@ static inline size_t xnn_align_up(size_t val, size_t align) {
 static inline float xnn_clamp_f32(float val, float min_v, float max_v) {
   return val < min_v ? min_v : (val > max_v ? max_v : val);
 }
+
+// Sandbox PR #11 (pr-core-math-accumulator-v1): Refactor SIMD microkernel-utils accumulator interface for f32 reciprocal sqrt
